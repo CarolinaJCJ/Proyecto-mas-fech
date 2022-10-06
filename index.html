@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoo Supply</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script> <!--carrito-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1 id="titulo" class="titulo">Tattoo Supply</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button> 
+    </header>
+    <ul id="lista"></ul>
+    <main id="contenedor-productos">
+    </main>
+    <div class="segundo">
+        <div class="segundo-carrito">
+            <h3>Carrito</h3>
+            <div id="carrito-contenedor">
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+    <div class="container">
+        <a href="#" class="btn">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <button id="boton">Reserva tu Tattoo!</button>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src= "//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+
+    <script src="./index.js"></script>
+
+</body>
+</html>

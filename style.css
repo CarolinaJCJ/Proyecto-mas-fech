@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+header {
+    display: flex;
+    background-image: url(tatto\ large.jpg);
+    background-size: 320px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    box-shadow: 0px 5px 4px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+h1 {
+    color: rgba(224, 111, 209, 0.943);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 5px black;
+    color: red
+    
+}
+#boton-carrito {
+    border: none;
+    color: rgb(13, 13, 13);
+    font-size: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+}
+#boton-carrito:focus {
+    outline: none;
+}
+
+#contenedor-productos {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 1.8;
+}
+.producto {
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(30, 26, 30, 0.852);
+    background-color: rgba(27, 21, 21, 0.025);
+}
+.precioProducto {
+    font-weight: 700;
+}
+.boton-agregar {
+    background-color: rgb(69, 46, 247);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+}
+.boton-agregar:hover {
+    cursor: pointer;
+}
+.boton-agregar:focus {
+    outline: none;
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.productoEnCarrito:hover {
+    border-left: 8px solid rgb(24, 202, 83);
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+body {
+    background-attachment: scroll;
+    background-repeat:repeat-x;
+    background-blend-mode:color-dodge;
+    background-size: 600px;
+    position:static;
+
+}
+p {
+    font: small-caps 100%/200%
+    serif;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.container .btn {
+    display:inline-block;
+    width: 90px;
+    height: 90px;
+    background: rgb(10, 9, 9);
+    box-shadow: 0 5px 15px -5px #aaa;
+    margin: 30px;
+    border-radius: 30%;
+    overflow: hidden;
+    position: relative;
+    color: #f7f2f2;
+}
+
+.container .btn i {
+    position: relative;
+    z-index: 4;
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.container .btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(#00c6ff, #0072ff);
+    transform: rotate(45deg);
+    left: -110%;
+    top:90%;
+}
+
+.container .btn:hover i {
+    color: #fff;
+    transform: scale (1.3);
+}
+
+.container .btn:hover::before {
+    animation: onHover 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+@keyframes onHover {
+    0% {
+left: -110%;
+top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
